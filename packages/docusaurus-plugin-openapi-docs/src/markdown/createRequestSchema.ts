@@ -194,7 +194,7 @@ function createAdditionalProperties(schema: SchemaObject) {
           ),
           guard(getQualifierMessage(schema.additionalProperties), (message) =>
             create("div", {
-              style: { marginTop: "var(--ifm-table-cell-padding)" },
+              style: { marginTop: "var(--ifm-table-cell-padding)", backgroundColor: 'red'},
               children: createDescription(message),
             })
           ),
